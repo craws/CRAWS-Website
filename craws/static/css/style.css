@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* overriding (possibly different) browser-defaults */
+* {margin: 0; padding: 0;}
+p {margin: 1em 0 1em 0;}
+img {border-style: none;}
+/* end override browser defaults */
+
+html {
+    height: 101%; /* scrollbar always visible so that menu doesnt move */
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    padding: 1em;
+}
+
+span.craws {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#intro-text {
+    margin-bottom: 1em;
+}
+
+div.clear-both {
+    clear: both;
+}
+
+#header, #content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    padding-top: 2.5em;
+    clear: both;
+}
+
+#tagline {
+    float:left;
+    padding-top: 3.6em;
+    padding-left: 2em;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.screenshot {
+    width: 282px;
+    min-height: 20px;
+    float: left;
+}
+
+div.screenshot img {
+    width: 280px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+div.screenshot a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 327px;
+    height: 80px;
+    float: left;
+}
+
+#projects {
+    clear: both;
+}
+
+div.project {
+    width: 1000px;
+    padding-top: 2.5em;
+}
+
+#menu {
+    float: right;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 1.2em;
+}
+
+#tags {
+    text-align: center;
+}
+
+#tags div, .tag {
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    float:left;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.tag {
+    font-size: 0.8em;
+}
+
+.project {
+
+}
+
+#footer {
+    text-align: center
+}
+
+#footer-separator {
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    clear: both;
+}
+
+#separator {
+    clear: both;
+    height: 2px;
+    margin-top: 2em;
+}
+
+.project-info {
+    float: left;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+    margin-left: 2em;
+    width: 680px;
+}
+
+.project-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.project-dates {
+    font-size: 0.9em;
+}
+
+.project-detail {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+
+.team div p {
+    font-weight: bold;
+}
+
+.team > div {
+    text-align: center;
+}
+
+.team > div > div {
+    margin: 0 0.5em 0 0;
+    float: left;
+    width: 324px;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+}

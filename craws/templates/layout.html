@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRAWS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="manifest" href="/favicon/manifest.json"/>
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/color.css"/>
+    {% if page == "index": %}
+    <script src="/static/js/jquery/jquery-3.1.1.min.js"></script>
+    {% endif %}
+</head>
+<body>
+<div id="header">
+    <a href="http://craws.net">
+        <img id="logo" src="/static/images/craws.png" alt="Creating Reality and Advanced Web Systems"/>
+    </a>
+    <div id="tagline">
+        <span class="craws">C</span>reating
+        <span class="craws">R</span>eality and
+        <span class="craws">A</span>dvanced
+        <span class="craws">W</span>eb
+        <span class="craws">S</span>ystems since 2001
+    </div>
+    <div id="menu">
+        {% if page == "index": %}
+        <a href="/">Projects</a> | <a class="inactive" href="/team">Team</a>
+        {% else %}
+        <a class="inactive" href="/">Projects</a> | <a href="/team">Team</a>
+        {% endif %}
+    </div>
+</div>
+<div id="content">
+    {% block body %}{% endblock %}
+    <div class="clear-both"></div>
+    <div id="footer-separator"></div>
+    <div id="footer">
+        Contact: <a class="email" href="mailto:alexander.watzinger@craws.net">alexander.watzinger@craws.net</a>
+    </div>
+</div>
+</body>
+</html>

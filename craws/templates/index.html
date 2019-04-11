@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div id="intro-text">
+        We are some <a href="/team">guys</a> located in Austria, Vienna who enjoy working together.
+        This site gives an overview of projects we're involved.
+    </div>
+    {{ content|safe }}
+    <script src="/static/js/functions.js"></script>
+{% endblock %}
