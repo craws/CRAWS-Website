@@ -2,7 +2,7 @@
 
 Craws website is a very basic site build with Flask for [CRAWS](https://craws.net).
 
-If you are interested in more complex Flask application you might want to take a look at the OpenAtlas project on [GitHub](https://github.com/craws/OpenAtlas).
+If you are interested in a more complex Flask application you might want to take a look at the OpenAtlas project on [GitHub](https://github.com/craws/OpenAtlas).
 
 # Licensing
 
