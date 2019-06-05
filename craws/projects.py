@@ -50,6 +50,7 @@ projects.append(bock)
 
 folding = Project('folding', 'Folding@Home', 2009, 'now')
 folding.description = 'Participation at Folding@home, a distributed computing project for disease research'
+folding.urls = OrderedDict()
 folding.urls['Website'] = 'https://foldingathome.org'
 folding.urls['Team stats'] = 'https://stats.foldingathome.org/team/150343'
 folding.tags = ['Non-Profit']
