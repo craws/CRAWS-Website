@@ -38,7 +38,7 @@ projects.append(openatlas)
 
 lady_cancer = Project('lady_cancer', 'Lady Cancer', 2014, 2017)
 lady_cancer.description = 'Outreach for cancer survivors. Archived as static HTML in 2017.'
-lady_cancer.urls = {'Website': 'https://ladycancer.craws.net'}
+lady_cancer.urls = {'Website': 'https://archive.craws.net/ladycancer'}
 lady_cancer.tags = ['Apache', 'Debian', 'Non-Profit', 'PHP', 'PostgreSQL']
 projects.append(lady_cancer)
 
@@ -58,19 +58,19 @@ projects.append(folding)
 
 xplodinghead = Project('xplodinghead', 'XplodingHead', 2005, 2017)
 xplodinghead.description = 'A non-profit platform for projects with like-minded people. Archived as static HTML in 2018.'
-xplodinghead.urls = {'Website': 'https://xplodinghead.org'}
+xplodinghead.urls = {'Website': 'https://archive.craws.net/xplodinghead'}
 xplodinghead.tags = ['Apache', 'Debian', 'Non-Profit', 'PHP', 'PostgreSQL']
 projects.append(xplodinghead)
 
 cloneball = Project('cloneball', 'CloneBall', 2005, 2011)
 cloneball.description = 'A futuristic, not entirely serious online sports manager game.'
-cloneball.urls = {'Website': 'https://xplodinghead.org/cloneball'}
+cloneball.urls = {'Website': 'https://archive.craws.net/xplodinghead/cloneball'}
 cloneball.tags = ['Apache', 'Debian', 'Java', 'Non-Profit', 'PHP', 'PostgreSQL']
 projects.append(cloneball)
 
 lila9 = Project('lila9', 'Lila9', 2001)
 lila9.description = 'A website for a small party in the 2001 council elections in Vienna.'
-lila9.urls = {'Website': 'https://lila9.craws.net'}
+lila9.urls = {'Website': 'https://archive.craws.net/lila9'}
 lila9.tags = ['Non-Profit']
 projects.append(lila9)
 
