@@ -1,4 +1,4 @@
-# Created by Alexander Watzinger and others. Please see README.md for licensing information
+# Created by Alexander Watzinger. Please see README.md for licensing information
 import unittest
 
 from craws import app

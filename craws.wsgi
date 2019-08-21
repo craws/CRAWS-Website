@@ -1,4 +1,5 @@
+import os
 import sys
-sys.path.insert(0, "/var/www/net/craws/www")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from craws import app as application

@@ -1,3 +1,4 @@
+# Created by Alexander Watzinger. Please see README.md for licensing information
 import os.path
 from collections import OrderedDict
 from urllib.parse import urlsplit
