@@ -6,6 +6,33 @@
         <a target="_blank" rel="noopener" href="https://openatlas.eu">OpenAtlas</a> on which we work with our colleagues from the
         <a target="_blank" rel="noopener" href="https://openatlas.eu">ACDH-CH</a> and other scientific institutes from all over the world.
     </p>
-    {{ content|safe }}
+    {{ tags|safe }}
     <script src="/static/functions.js"></script>
+    <div id="projects">
+    {% for name, project in projects %}
+        <div class="clear-both">
+            <div class="project {{' '.join(project.tags_sanitized) }}">
+                <div class="screenshot">
+                    <a target="_blank" rel="noopener" href="{{ list(project.urls.values())[0] }}">
+                        <img src="/static/images/projects/{{ project.image }}" alt="{{ name }}">
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <span class="project-name">{{ project.name }}</span>
+                <span class="project-dates">{{ project.dates }}</span>
+                <p class="project-detail">{{ project.description }}</p>
+                {% for tag in project.tags %}
+                    <div class="tag ' + projects.sanitize(tag) + '" onclick="tagClick(\'' + \ projects.sanitize(tag) + '\')">
+                        {{ tag }}
+                    </div>
+                {% endif %}
+                <div class="clear-both"></div>
+                {% for url in project.urls %}
+                    {% base_url = "{0.scheme}://{0.netloc}/".format(urlsplit(project.urls[url])) %}
+                    {{ url }}: <a target="_blank" rel="noopener" href="{{ project.urls[url] }}">{{ base_url }}</a><br/>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
