@@ -1,9 +1,9 @@
-from typing import Dict
+from typing import Dict, Tuple
 
 from flask import render_template
 
 from craws import app
-from craws.data.projects import projects
+from craws.data import projects, team_members
 from craws.filters import sanitize
 
 
@@ -29,9 +29,9 @@ def index() -> str:
 
 @app.route('/team')
 def team() -> str:
-    return render_template('team.html')
+    return render_template('team.html', team_members=team_members)
 
 
 @app.errorhandler(404)
-def page_not_found(e: Exception) -> tuple:
+def page_not_found(e: Exception) -> Tuple[str, int]:
     return render_template('404.html', e=e), 404

@@ -1,4 +1,21 @@
-from typing import Any, Dict
+from typing import Any, Dict, List
+
+team_members: List[Dict[str, str]] = [
+    {
+        'name': 'Alexander Watzinger',
+        'function': 'Software Development',
+        'image': 'alex.png',
+        'email': 'alexander.watzinger@craws.net'},
+    {
+        'name': 'Jan Belik',
+        'function': 'Graphic Design',
+        'image': 'jan.png',
+        'email': 'buero@janbelik.com'},
+    {
+        'name': 'Daniel Kittel',
+        'function': 'Quality Assurance',
+        'image': 'daniel.png',
+        'email': 'daniel.kittel@craws.net'}]
 
 projects: Dict[str, Dict[str, Any]] = {
     'OpenAtlas': {

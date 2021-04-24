@@ -2,25 +2,15 @@
 {% block body %}
     <div class="team">
         <div>
-            <div>
-                <p>Software Development</p>
-                <img src="/static/images/team/alex.png" alt="Alex" /><br />
-                Alexander Watzinger<br />
-                <a class="email" href="mailto:alexander.watzinger@craws.net">alexander.watzinger@craws.net</a>
-            </div>
-            <div>
-                <p>Graphic Design</p>
-                <img src="/static/images/team/jan.png" alt="Jan" /><br />
-                Jan Belik<br/>
-                <a class="email" href="mailto:buero@janbelik.com">buero@janbelik.com</a>
-            </div>
-            <div>
-                <p>Quality Assurance</p>
-                <img src="/static/images/team/daniel.png" alt="Daniel" /><br />
-                Daniel Kittel<br/>
-                <a class="email" href="mailto:daniel.kittel@craws.net">daniel.kittel@craws.net</a>
-            </div>
-        </div>
+            {% for member in team_members %}
+                <div>
+                    <p>{{ member.function }}</p>
+                    <img src="/static/images/team/{{ member.image }}" alt="{{ member.name }}" /><br />
+                    {{ member.name }}<br />
+                    <a class="email" href="mailto:{{ member.email }}">{{ member.email }}</a>
+                </div>
+            {% endfor %}
+         </div>
     </div>
     <div class="clear-both"></div>
     <div id="separator"></div>

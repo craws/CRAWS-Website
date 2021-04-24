@@ -15,32 +15,32 @@
     {% endif %}
 </head>
 <body>
-<div id="header">
-    <a href="http://craws.net">
-        <img id="logo" src="/static/images/craws.png" alt="Creating Reality and Advanced Web Systems"/>
-    </a>
-    <div id="tagline">
-        <span class="craws">C</span>reating
-        <span class="craws">R</span>eality and
-        <span class="craws">A</span>dvanced
-        <span class="craws">W</span>eb
-        <span class="craws">S</span>ystems since 2001
+    <div id="header">
+        <a href="http://craws.net">
+            <img id="logo" src="/static/images/craws.png" alt="Creating Reality and Advanced Web Systems"/>
+        </a>
+        <div id="tagline">
+            <span class="craws">C</span>reating
+            <span class="craws">R</span>eality and
+            <span class="craws">A</span>dvanced
+            <span class="craws">W</span>eb
+            <span class="craws">S</span>ystems since 2001
+        </div>
+        <div id="menu">
+            {% if page == "index": %}
+            <a href="/">Projects</a> | <a class="inactive" href="/team">Team</a>
+            {% else %}
+            <a class="inactive" href="/">Projects</a> | <a href="/team">Team</a>
+            {% endif %}
+        </div>
     </div>
-    <div id="menu">
-        {% if page == "index": %}
-        <a href="/">Projects</a> | <a class="inactive" href="/team">Team</a>
-        {% else %}
-        <a class="inactive" href="/">Projects</a> | <a href="/team">Team</a>
-        {% endif %}
+    <div id="content">
+        {% block body %}{% endblock %}
+        <div class="clear-both"></div>
+        <div id="footer-separator"></div>
+        <div id="footer">
+            Contact: <a class="email" href="mailto:alexander.watzinger@craws.net">alexander.watzinger@craws.net</a>
+        </div>
     </div>
-</div>
-<div id="content">
-    {% block body %}{% endblock %}
-    <div class="clear-both"></div>
-    <div id="footer-separator"></div>
-    <div id="footer">
-        Contact: <a class="email" href="mailto:alexander.watzinger@craws.net">alexander.watzinger@craws.net</a>
-    </div>
-</div>
 </body>
 </html>
