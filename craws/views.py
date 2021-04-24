@@ -19,9 +19,10 @@ def index():
         content += '<div class="clear-both">'
         content += '<div class="project ' + ' '.join(project.tags_sanitized) + '">'
         content += '<div class="screenshot">'
-        file_path = '/static/images/projects/' + project.identifier + '.png'
-        if os.path.isfile(os.path.dirname(os.path.abspath(__file__)) + file_path):
-            content += '<a href="' + file_path + '"><img src="' + file_path + '" alt="" /></a>'
+        content += f"""
+            <a target="_blank" rel="noopener" href="{list(project.urls.values())[0]}">
+                <img src="/static/images/projects/{project.image}" alt="{project.name}">
+            </a>"""
         content += '</div>'
         content += '<div class="project-info">'
         content += '<span class="project-name">' + project.name + '</span>'

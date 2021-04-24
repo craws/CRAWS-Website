@@ -1,6 +1,3 @@
-from collections import OrderedDict
-
-
 class Project(object):
     def __init__(self, identifier, name, start, end=None):
         self.identifier = identifier
@@ -12,6 +9,7 @@ class Project(object):
     description = None
     start = None
     end = None
+    image = ''
     url = None
     url_forum = None
     url_repository = None
@@ -28,11 +26,11 @@ projects = []
 
 openatlas = Project('openatlas', 'OpenAtlas', 2013, 'now')
 openatlas.description = 'An open source, web based database system for complex archaeological, historical and geospatial data.'
-
-openatlas.urls = OrderedDict()
-openatlas.urls['Website'] = 'https://openatlas.eu'
-openatlas.urls['Demo version'] = 'https://demo.openatlas.eu'
-openatlas.urls['Code on GitHub'] = 'https://github.com/craws/OpenAtlas'
+openatlas.image = 'openatlas.png'
+openatlas.urls = {
+    'Website': 'https://openatlas.eu',
+    'Demo version': 'https://demo.openatlas.eu',
+    'Code on GitHub': 'https://github.com/craws/OpenAtlas'}
 openatlas.tags = ['Apache', 'Debian', 'Flask', 'Non-Profit', 'Open Source', 'Python', 'PostGIS', 'PostgreSQL']
 projects.append(openatlas)
 
@@ -40,38 +38,44 @@ lady_cancer = Project('lady_cancer', 'Lady Cancer', 2014, 2017)
 lady_cancer.description = 'Outreach for cancer survivors. Archived as static HTML in 2017.'
 lady_cancer.urls = {'Website': 'https://archive.craws.net/ladycancer'}
 lady_cancer.tags = ['Apache', 'Debian', 'Non-Profit', 'PHP', 'PostgreSQL']
+lady_cancer.image = 'lady_cancer.png'
 projects.append(lady_cancer)
 
-bock = Project('bock', 'Ute Bock', 2010)
-bock.description = 'Teaching refugees basic computer skills.'
-bock.tags = ['Debian', 'Non-Profit']
-bock.urls = {'Website': 'https://fraubock.at'}
-projects.append(bock)
+ute_bock = Project('ute_bock', 'Ute Bock', 2010)
+ute_bock.description = 'Teaching refugees basic computer skills.'
+ute_bock.tags = ['Debian', 'Non-Profit']
+ute_bock.urls = {'Website': 'https://fraubock.at'}
+ute_bock.image = 'ute_bock.gif'
+projects.append(ute_bock)
 
 folding = Project('folding', 'Folding@Home', 2009, 'now')
 folding.description = 'Participation at Folding@home, a distributed computing project for disease research'
-folding.urls = OrderedDict()
-folding.urls['Website'] = 'https://foldingathome.org'
-folding.urls['Team stats'] = 'https://stats.foldingathome.org/team/150343'
+folding.urls = {
+    'Website': 'https://foldingathome.org',
+    'Team stats': 'https://stats.foldingathome.org/team/150343'}
 folding.tags = ['Non-Profit']
+folding.image = 'folding.png'
 projects.append(folding)
 
 xplodinghead = Project('xplodinghead', 'XplodingHead', 2005, 2017)
 xplodinghead.description = 'A non-profit platform for projects with like-minded people. Archived as static HTML in 2018.'
 xplodinghead.urls = {'Website': 'https://archive.craws.net/xplodinghead'}
 xplodinghead.tags = ['Apache', 'Debian', 'Non-Profit', 'PHP', 'PostgreSQL']
+xplodinghead.image = 'xplodinghead.png'
 projects.append(xplodinghead)
 
 cloneball = Project('cloneball', 'CloneBall', 2005, 2011)
 cloneball.description = 'A futuristic, not entirely serious online sports manager game.'
 cloneball.urls = {'Website': 'https://archive.craws.net/xplodinghead/cloneball'}
 cloneball.tags = ['Apache', 'Debian', 'Java', 'Non-Profit', 'PHP', 'PostgreSQL']
+cloneball.image = 'cloneball.png'
 projects.append(cloneball)
 
 lila9 = Project('lila9', 'Lila9', 2001)
 lila9.description = 'A website for a small party in the 2001 council elections in Vienna.'
 lila9.urls = {'Website': 'https://archive.craws.net/lila9'}
 lila9.tags = ['Non-Profit']
+lila9.image = 'lila9.png'
 projects.append(lila9)
 
 tags = {}
