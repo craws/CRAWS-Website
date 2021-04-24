@@ -5,8 +5,8 @@
             {% for member in team_members %}
                 <div>
                     <p>{{ member.function }}</p>
-                    <img src="/static/images/team/{{ member.image }}" alt="{{ member.name }}" /><br />
-                    {{ member.name }}<br />
+                    <img src="/static/images/team/{{ member.image }}" alt="{{ member.name }}"><br>
+                    {{ member.name }}<br>
                     <a class="email" href="mailto:{{ member.email }}">{{ member.email }}</a>
                 </div>
             {% endfor %}
@@ -17,7 +17,7 @@
     <div class="team">
         <div>
             <p>Former Members</p>
-            Christof Rauchenberger<br />
+            Christof Rauchenberger<br>
             David Bra
         </div>
     </div>
