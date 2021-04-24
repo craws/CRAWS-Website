@@ -100,6 +100,7 @@ div.project {
 
 .tag {
     font-size: 0.8em;
+    cursor: default;
 }
 
 .project {
@@ -140,7 +141,7 @@ div.project {
     font-weight: bold;
 }
 
-.project-dates {
+.project-date {
     font-size: 0.9em;
 }
 

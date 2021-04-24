@@ -1,14 +1,14 @@
-from flask import Flask
+from flask import Flask, Response
 
 app = Flask(__name__, instance_relative_config=True)
-app.config.from_object('config.default')  # Load config
-app.config.from_pyfile('production.py')  # Load instance
+app.config.from_object('config.default')  # type: ignore
+app.config.from_pyfile('production.py')  # type: ignore
 
-from craws import views
+from craws import views, filters
 
 
 @app.after_request
-def apply_caching(response):
+def apply_caching(response: Response) -> Response:
     response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
     response.headers['Content-Security-Policy'] = "default-src 'self'"
     response.headers['X-Content-Type-Options'] = 'nosniff'
