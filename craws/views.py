@@ -1,4 +1,3 @@
-# Created by Alexander Watzinger. Please see README.md for licensing information
 import os.path
 from collections import OrderedDict
 from urllib.parse import urlsplit
@@ -13,7 +12,7 @@ def index():
     content = '<div id="tags">'
     tags = OrderedDict(sorted(projects.tags.items(), key=lambda t: t[0].casefold(), reverse=False))
     for tag in tags:
-        content += '<div id="' + projects.sanitize(tag) + '">' + tag + '</div>'
+        content += f'<div id="{projects.sanitize(tag)}">{tag}</div>'
     content += '</div>'
     content += '<div id="projects">'
     for project in projects.projects:

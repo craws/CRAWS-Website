@@ -20,11 +20,6 @@ span.craws {
     font-size: 1.2em;
 }
 
-#intro-text {
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
 div.clear-both {
     clear: both;
 }
@@ -171,4 +166,41 @@ div.project {
 .team img {
     width: 200px;
     height: 200px;
+}
+
+body, #menu a.inactive {
+    color: #666666;
+}
+
+a, span.craws {
+	color: #86bf86;
+}
+
+#tags div, .tag {
+	color: #ffffff;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#tags div {
+	background-color: #c3dfc3;
+}
+
+#tags div.active, #footer-separator {
+	background-color: #86bf86;
+}
+
+.tag,
+#separator {
+	background-color: #b4b4b4;
+}
+
+div.screenshot img {
+	border-color: #b4b4b4;
+}
+
+.tag.active {
+	background-color: #666666;
 }

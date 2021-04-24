@@ -1,9 +1,11 @@
 {% extends "layout.html" %}
 {% block body %}
-    <div id="intro-text">
-        We are some <a href="/team">guys</a> located in Austria, Vienna who enjoy working together.
-        This site gives an overview of some projects we're involved.
-    </div>
+    <p>
+        We are some <a href="/team">guys</a> located in Austria, Vienna who enjoy working together and this site gives an overview of some
+        projects we have been involved with. Over the past few years our focus shifted more and more to the open source project
+        <a target="_blank" rel="noopener" href="https://openatlas.eu">OpenAtlas</a> on which we work with our colleagues from the
+        <a target="_blank" rel="noopener" href="https://openatlas.eu">ACDH-CH</a> and other scientific institutes from all over the world.
+    </p>
     {{ content|safe }}
     <script src="/static/functions.js"></script>
 {% endblock %}
