@@ -28,8 +28,18 @@ projects: Dict[str, Dict[str, Any]] = {
             'Website': 'https://openatlas.eu',
             'Demo version': 'https://demo.openatlas.eu',
             'Code on GitHub': 'https://github.com/craws/OpenAtlas'},
-        'description': "An open source, web based database system for complex archaeological, "
-                       "historical and geospatial data."},
+        'description': """
+            An open source, web based database system for complex archaeological,
+            historical and geospatial data."""},
+    'Folding@Home': {
+        'date': '2009 - now',
+        'image': 'folding.png',
+        'tags': ['Non-Profit'],
+        'urls': {
+            'Website': 'https://foldingathome.org',
+            'Team stats': 'https://stats.foldingathome.org/team/150343'},
+        'description':
+            "Participation at Folding@home, a distributed computing project for disease research."},
     'Lady Cancer': {
         'date': '2014 - 2017',
         'image': 'lady_cancer.png',
@@ -42,29 +52,20 @@ projects: Dict[str, Dict[str, Any]] = {
         'tags': ['Debian', 'Non-Profit'],
         'urls': {'Website': 'https://fraubock.at'},
         'description': "Teaching refugees basic computer skills."},
-    'Folding@Home': {
-        'date': '2009 - now',
-        'image': 'folding.png',
-        'tags': ['Non-Profit'],
-        'urls': {
-            'Website': 'https://foldingathome.org',
-            'Team stats': 'https://stats.foldingathome.org/team/150343'},
-        'description': "Participation at Folding@home, a distributed computing project for disease "
-                       "research"},
     'XplodingHead': {
         'date': '2005 - 2017',
         'image': 'xplodinghead.png',
         'tags': ['Apache', 'Debian', 'Non-Profit', 'PHP', 'PostgreSQL'],
         'urls': {'Website': 'https://archive.craws.net/xplodinghead'},
-        'description': "A non-profit platform for projects with like-minded people. Archived as "
-                       "static HTML in 2018."},
+        'description': """
+            A non-profit platform for projects with like-minded people. Archived as static HTML
+            in 2018."""},
     'CloneBall': {
         'date': '2005 - 2011',
         'image': 'cloneball.png',
         'tags': ['Apache', 'Debian', 'Java', 'Non-Profit', 'PHP', 'PostgreSQL'],
-        'urls': {'Website': 'https://archive.craws.net/xplodinghead'},
+        'urls': {'Website': 'https://archive.craws.net/xplodinghead/cloneball/'},
         'description': "A futuristic, not entirely serious online sports manager game."},
-
     'Lila9': {
         'date': '2001',
         'image': 'lila9.png',
