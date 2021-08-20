@@ -19,7 +19,8 @@ def index() -> str:
                 tags[tag] += 1
             else:
                 tags[tag] = 1
-    tags_html = [f'<div id="{sanitize(tag)}">{tag}</div>' for tag in sorted(tags.keys())]
+    tags_html = [
+        f'<div id="{sanitize(tag)}">{tag}</div>' for tag in sorted(tags.keys())]
     return render_template(
         'index.html',
         page="index",
