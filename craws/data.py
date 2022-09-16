@@ -39,15 +39,15 @@ projects: Dict[str, Dict[str, Any]] = {
             'Website': 'https://foldingathome.org',
             'Team stats': 'https://stats.foldingathome.org/team/150343'},
         'description':
-            "Participation at Folding@home, a distributed computing project for"
-            " disease research."},
+            "Participation at Folding@home, a distributed computing project "
+            "for disease research."},
     'Lady Cancer': {
         'date': '2014 - 2017',
         'image': 'lady_cancer.png',
         'tags': ['Debian', 'Non-Profit', 'PHP', 'PostgreSQL'],
         'urls': {'Website': 'https://archive.craws.net/ladycancer'},
         'description':
-            'Outreach for cancer survivors. Archived as static HTML  in 2017.'},
+            'Outreach for cancer survivors. Archived as static HTML in 2017.'},
     'Ute Bock': {
         'date': '2010',
         'image': 'ute_bock.gif',

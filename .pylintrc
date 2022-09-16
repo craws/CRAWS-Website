@@ -1,0 +1,10 @@
+[MASTER]
+ignore=craws.wsgi
+disable=C0111  # missing-docstring
+good-names=e
+
+[FORMAT]
+max-line-length=79
+
+[TYPECHECK]
+disable=cyclic-import

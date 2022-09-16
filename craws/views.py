@@ -10,7 +10,7 @@ from craws.filters import sanitize
 @app.route('/')
 def index() -> str:
     tags: Dict[str, int] = {}
-    for name, project in projects.items():
+    for project in projects.values():
         project['main_url'] = list(project['urls'].values())[0]
         project['tags_sanitized'] = []
         for tag in project['tags']:
@@ -20,7 +20,8 @@ def index() -> str:
             else:
                 tags[tag] = 1
     tags_html = [
-        f'<div id="{sanitize(tag)}">{tag}</div>' for tag in sorted(tags.keys())]
+        f'<div id="{sanitize(tag)}">{tag}</div>'
+        for tag in sorted(tags.keys())]
     return render_template(
         'index.html',
         page="index",
