@@ -18,7 +18,3 @@ def apply_caching(response: Response) -> Response:
     response.headers['X-Frame-Options'] = 'SAMEORIGIN'
     response.headers['X-XSS-Protection'] = '1; mode=block'
     return response
-
-
-if __name__ == "__main__":  # pragma: no cover
-    app.run()

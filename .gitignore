@@ -12,8 +12,7 @@ __pycache__/*
 # ide
 .idea
 
-# unit tests
-openatlas/tests/.coverage
-openatlas/tests/cover
-.coverage
-cover
+# tests
+tests/.coverage
+tests/cover
+
