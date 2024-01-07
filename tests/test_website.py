@@ -7,7 +7,7 @@ class TestBaseCase(unittest.TestCase):
 
     def setUp(self) -> None:
         app.testing = True
-        app.config['SERVER_NAME'] = 'localhost'
+        app.config['SERVER_NAME'] = 'local.host'
         self.app = app.test_client()
 
 

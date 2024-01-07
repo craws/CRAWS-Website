@@ -5,7 +5,7 @@ from craws import app
 
 @app.template_filter()
 def base_url(url: str) -> str:
-    return "{0.scheme}://{0.netloc}/".format(urlsplit(url))
+    return f'{urlsplit(url).scheme}://{urlsplit(url).netloc}'
 
 
 @app.template_filter()

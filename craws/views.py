@@ -15,18 +15,16 @@ def index() -> str:
         project['tags_sanitized'] = []
         for tag in project['tags']:
             project['tags_sanitized'].append(sanitize(tag))
-            if tag in tags.keys():
+            if tag in tags:
                 tags[tag] += 1
             else:
                 tags[tag] = 1
-    tags_html = [
-        f'<div id="{sanitize(tag)}">{tag}</div>'
-        for tag in sorted(tags.keys())]
+    items = [f'<div id="{sanitize(tag)}">{tag}</div>' for tag in sorted(tags)]
     return render_template(
         'index.html',
         page="index",
         projects=projects,
-        tags=f'<div id="tags">{"".join(tags_html)}</div>')
+        tags=f'<div id="tags">{"".join(items)}</div>')
 
 
 @app.route('/team')

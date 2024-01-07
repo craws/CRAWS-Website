@@ -1,14 +1,12 @@
 # About
-
 Craws website is a very basic site build with Flask for
 [CRAWS](https://craws.net).
 
 If you are interested in a more complex Flask application you might want to
-take a look at the OpenAtlas project on
+take a look at the [OpenAtlas](https://openatlas.eu) project on
 [GitHub](https://github.com/craws/OpenAtlas).
 
 # Licensing
-
 All CRAWS website code unless otherwise noted is licensed under the terms of
 the GNU General Public License Version 2, June 1991. Please refer to the file
 COPYING in the root directory of this repository or the online version at
